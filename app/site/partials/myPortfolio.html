@@ -1,0 +1,35 @@
+<div class="row container-fluid">
+	<div class="col-sm-10 col-sm-offset-1">
+		<h3>{{ctrl.userName}}'s Portfolio</h3>
+
+		
+
+		<!-- ADD STOCK FORM -->
+		<div class="col-sm-10 col-sm-offset-1" id="addStock">
+			<h3>Add Stock to Portfolio:</h3>
+			<div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label>Ticker:</label>
+						<input ng-model="ctrl.addTicker" class="form-control" type="text" required></input>
+					</div>
+					<div class="form-group">
+						<label>Purchase Price:</label>
+						<input ng-model="ctrl.addPurchasePrice" class="form-control" type="text" required></input>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="form-group">
+						<label>Units Owned:</label>
+						<input ng-model="ctrl.addQuantity" class="form-control" type="text" required></input>
+					</div>
+					<!-- Button: Add Product -->
+					<button class="btn" ng-click="ctrl.addStock()">Add Stock</button>
+				</div>
+			</div>
+		</div>
+		<!-- ADD STOCK FORM - END -->
+
+	</div>
+</div>
+
